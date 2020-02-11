@@ -1,6 +1,8 @@
-# Use the httpd-parent image as base
-EXPOSE 8080 
+# Use the httpd-parent image as base 
 FROM quay.io/redhattraining/httpd-parent
+
+EXPOSE 8080
+
 LABEL io.openshift.expose.services="8080:http"
 
 # Labels consumed by OpenShift
